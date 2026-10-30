@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-linen: #F3EDE2;
+    --color-linen-deep: #E8DFCF;
+    --color-petrol: #1E5560;
+    --color-baby-pink: #F5C6D2;
+    --color-tangerine: #FF8A3D;
+    --color-black-cherry: #3B0F20;
+    --color-cool-blue: #5B8EF2;
+  }
+
+  body {
+    background-color: #F3EDE2;
+    color: #3B0F20;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* Accessible focus ring */
+  *:focus-visible {
+    outline: 2px solid #1E5560;
+    outline-offset: 2px;
+  }
+
+  /* All numbers tabular */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom utility to hide scrollbar */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

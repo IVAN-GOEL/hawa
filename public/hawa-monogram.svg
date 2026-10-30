@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="monogramGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E5560" />
+      <stop offset="60%" stop-color="#3B0F20" />
+      <stop offset="100%" stop-color="#FF8A3D" />
+    </linearGradient>
+  </defs>
+  <!-- Rounded squircle app icon background -->
+  <rect width="120" height="120" rx="32" fill="#F3EDE2" />
+  <rect x="4" y="4" width="112" height="112" rx="28" fill="none" stroke="#E8DFCF" stroke-width="2" />
+  
+  <!-- "h" Monogram with thick, juicy strokes -->
+  <text x="60" y="85" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="900" font-size="82" fill="url(#monogramGrad)">
+    h
+  </text>
+  
+  <!-- Air swirl accent -->
+  <path d="M78 40 C86 42, 92 48, 88 56 C85 62, 75 60, 80 52" fill="none" stroke="#FF8A3D" stroke-width="4" stroke-linecap="round" />
+</svg>

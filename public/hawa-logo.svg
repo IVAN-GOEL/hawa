@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160" width="500" height="160">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@900&amp;display=swap');
+      .hawa-text {
+        font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+        font-weight: 900;
+        font-size: 110px;
+        fill: #FFFFFF;
+        letter-spacing: -2px;
+      }
+    </style>
+  </defs>
+  <!-- High-contrast thick stroke wordmark on transparent background -->
+  <text x="250" y="118" text-anchor="middle" class="hawa-text">hawa</text>
+</svg>

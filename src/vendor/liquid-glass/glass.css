@@ -1,0 +1,44 @@
+.liquid-glass-container {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.liquid-glass-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.liquid-glass-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.liquid-glass-button {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease;
+  user-select: none;
+}
+
+.liquid-glass-button:active {
+  transform: scale(0.97);
+}
+
+/* Fallback CSS glass when WebGL2 is not active or reduced-motion */
+.css-liquid-glass {
+  background: rgba(245, 198, 210, 0.35); /* baby-pink tint */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(232, 223, 207, 0.8); /* linen-deep translucent */
+  box-shadow: 0 4px 20px rgba(59, 15, 32, 0.06);
+}
