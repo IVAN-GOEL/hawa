@@ -35,6 +35,7 @@ jobs:
 
       - name: Build production bundle
         env:
+          VITE_BASE_PATH: '/hawa/'
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL || 'https://tbzjvwpfjocydzhtdtjf.supabase.co' }}
           VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY || 'sb_publishable_hbp4VrqZMXHFTfx5EQNknw_7hJWdiWV' }}
         run: npm run build

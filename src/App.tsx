@@ -37,7 +37,7 @@ export function App() {
   }, [init]);
 
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <Routes>
         {/* Public Routes Only */}
         <Route path="/" element={<LandingPage />} />
